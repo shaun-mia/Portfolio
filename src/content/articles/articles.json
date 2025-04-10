@@ -1,0 +1,31 @@
+{
+  "articles": [
+    {
+      "slug": "mastering-sql-ctes",
+      "title": "Mastering SQL CTEs: Simplifying Complex Queries with Ease",
+      "date": "2024-02-25",
+      "tags": ["SQL", "Database", "CTEs", "Data Analysis", "Technical Guide"],
+      "excerpt": "Learn how to use Common Table Expressions (CTEs) to write cleaner and more maintainable SQL queries, with practical examples and best practices.",
+      "linkedIn": "https://medium.com/@shaunmia/mastering-sql-ctes-simplifying-complex-queries-with-ease-f2321cae7447",
+      "content": "# Mastering SQL CTEs: Simplifying Complex Queries with Ease\n\nDiscover how Common Table Expressions (CTEs) can revolutionize your SQL queries by making them more readable, maintainable, and efficient.\n\n*For the complete guide with examples and detailed explanations, visit the [Medium article](https://medium.com/@shaunmia/mastering-sql-ctes-simplifying-complex-queries-with-ease-f2321cae7447)*\n\n## Key Concepts\n\n- Understanding CTEs and their benefits\n- Writing recursive CTEs\n- CTEs vs Subqueries\n- Best practices and optimization tips\n- Common use cases and patterns\n\n## Practical Applications\n\n- Hierarchical data queries\n- Complex data transformations\n- Query optimization\n- Code organization and readability\n\n## Benefits of Using CTEs\n\n- Improved code readability\n- Better query organization\n- Enhanced maintainability\n- Simplified complex logic\n- Reusable query components"
+    },
+    {
+      "slug": "power-bi-dashboard-design",
+      "title": "Effective Dashboard Design Principles in Power BI",
+      "date": "2024-02-20",
+      "tags": ["Power BI", "Data Visualization", "Dashboard Design", "Business Intelligence"],
+      "excerpt": "Learn key principles for creating effective and impactful Power BI dashboards that drive business decisions.",
+      "linkedIn": "https://medium.com/@shaunmia/effective-dashboard-design-principles-power-bi",
+      "content": "# Effective Dashboard Design Principles in Power BI\n\nLearn how to create impactful dashboards that effectively communicate insights and drive business decisions.\n\n## Key Design Principles\n\n- Visual hierarchy and layout\n- Color theory and accessibility\n- Interactive elements\n- Performance optimization\n\n## Best Practices\n\n- Data storytelling techniques\n- User experience considerations\n- Mobile responsiveness\n- Performance optimization"
+    },
+    {
+      "slug": "python-data-analysis",
+      "title": "Data Analysis with Python: A Comprehensive Guide",
+      "date": "2024-02-15",
+      "tags": ["Python", "Data Analysis", "Pandas", "NumPy", "Data Science"],
+      "excerpt": "A comprehensive guide to performing data analysis using Python, including data cleaning, visualization, and statistical analysis.",
+      "linkedIn": "https://medium.com/@shaunmia/data-analysis-with-python-guide",
+      "content": "# Data Analysis with Python\n\nLearn how to leverage Python's powerful libraries for effective data analysis.\n\n## Topics Covered\n\n- Data cleaning and preparation\n- Exploratory data analysis\n- Statistical analysis\n- Data visualization\n- Machine learning basics"
+    }
+  ]
+}
