@@ -67,35 +67,35 @@ const sqlProjects = [
     description: "Consumer Goods Ad-Hoc Analysis - Comprehensive SQL analysis project addressing various ad-hoc requests in the consumer goods sector.",
     technologies: ["SQL", "Data Analysis", "Business Intelligence"],
     github: "https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/AD-HOC%20Requests%20%20Consumer%20Goods%20Domain%20%20SQL%20Project",
-    image: "images/sql_ad.webp"
+    image: "https://i.ibb.co.com/fVfpqXJX/sql-ad.jpg"
   },
   {
     name: "Airbnb Outlier Detection and EDA",
     description: "Airbnb Outlier Detection and EDA - Statistical analysis of Airbnb listings for detecting pricing anomalies and customer satisfaction patterns.",
     technologies: ["SQL", "Data Analysis", "EDA"],
     github: "https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/AIRBNB%20Outlier%20Detection%20and%20EDA",
-    image: "images/airbnb.webp"
+    image: "https://i.ibb.co.com/39kL8K63/airbnb.webp"
   },
   {
     name: "Cohort Analysis Using SQL",
     description: "Cohort Analysis Using SQL - Customer behavior tracking and purchasing pattern analysis using cohort methodology on online retail data.",
     technologies: ["SQL", "Data Analysis", "Cohort Analysis"],
     github: "https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/Cohort%20Analysis%20Using%20SQL",
-    image: "images/py_cohort.webp"
+    image: "https://i.ibb.co.com/R44WgBsc/py-cohort.webp"
   },
   {
     name: "Pizza Sales Analysis Using SQL",
     description: "Pizza Sales Analysis Using SQL - Detailed analysis of pizza sales patterns, customer preferences and revenue trends.",
     technologies: ["SQL", "Data Analysis", "Sales Analytics"],
     github: "https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/Pizza%20Sales%20Analysis%20using%20SQL",
-    image: "images/pizza.webp"
+    image: "https://i.ibb.co.com/3mpngLF1/pizza.webp"
   },
   {
     name: "RFM Segmentation on Sales Data",
     description: "RFM Segmentation on Sales Data - Customer segmentation analysis based on Recency, Frequency, and Monetary value metrics.",
     technologies: ["SQL", "Data Analysis", "Customer Segmentation"],
     github: "https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/RFM%20Segmentation%20On%20Sales%20Data",
-    image: "images/sql_rfm.webp"
+    image: "https://i.ibb.co.com/sdbRr8gg/sql-rfm.webp"
   }
 ];
 
