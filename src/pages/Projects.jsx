@@ -105,21 +105,21 @@ const excelProjects = [
     description: "HR Attrition Analysis Dashboard - Comprehensive analysis of employee turnover trends using Excel Power Query and Pivot Tables.",
     technologies: ["Excel", "Power Query", "Data Visualization"],
     github: "https://github.com/shaun-mia/Excel-dashboard-Project?tab=readme-ov-file#2-hr-attrition-dashboard",
-    image: "images/Ex_HR Attirition Dasgboard.png"
+    image: "https://i.ibb.co.com/JwnhVPx7/Ex-HR-Attirition-Dasgboard.png"
   },
   {
     name: "Coffee Shop Sales Dashboard",
     description: "Coffee Shop Sales Dashboard - Detailed analysis of coffee shop performance metrics, product categories, and sales trends.",
     technologies: ["Excel", "Data Analysis", "Dashboard"],
     github: "https://github.com/shaun-mia/Excel-dashboard-Project?tab=readme-ov-file#1-coffee-shop-sales-dashboard",
-    image: "images/Ex_Coffee Shop Sales Dashboard.png"
+    image: "https://i.ibb.co.com/0Vs5wf72/Ex-Coffee-Shop-Sales-Dashboard.png"
   },
   {
     name: "Retail Sale Analysis Dashboard",
     description: "Retail Sale Analysis Dashboard - In-depth evaluation of retail sales across different regions, product categories and time periods.",
     technologies: ["Excel", "Data Analysis", "Visualization"],
     github: "https://github.com/shaun-mia/Excel-dashboard-Project?tab=readme-ov-file#3-retail-sale-analysis-dashboard",
-    image: "images/Ex_Retail Sale.png"
+    image: "https://i.ibb.co.com/wh34Wdqz/Ex-Retail-Sale.png"
   }
 ];
 
