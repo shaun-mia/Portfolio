@@ -129,63 +129,63 @@ const pythonProjects = [
     description: "Food Delivery Cost Analysis - Comprehensive analysis of delivery costs, discounts, and profitability metrics in food delivery operations.",
     technologies: ["Python", "Pandas", "Data Analysis"],
     github: "https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Food-Delivery-Costs-Analysis-main",
-    image: "images/py_food.webp"
+    image: "https://i.ibb.co.com/sdfxK32J/py-food.webp"
   },
   {
     name: "Adult Income Analysis",
     description: "Adult Income Analysis - Statistical examination of demographic and employment factors influencing income levels.",
     technologies: ["Python", "Data Analysis", "Statistical Analysis"],
     github: "https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Adult_Income_Analysis",
-    image: "images/py_Adult.webp"
+    image: "https://i.ibb.co.com/1GWj4RhB/py-Adult.webp"
   },
   {
     name: "Airbnb Listings EDA",
     description: "Airbnb Listings EDA - Exploratory data analysis of NYC Airbnb listings examining pricing patterns and availability trends.",
     technologies: ["Python", "Pandas", "EDA"],
     github: "https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Airbnb%20Listings%20EDA",
-    image: "images/airbnb.webp"
+    image: "https://i.ibb.co.com/39kL8K63/airbnb.webp"
   },
   {
     name: "Amazon Rainforest Fire Analysis",
     description: "Amazon Rainforest Fire Analysis - Time series analysis of forest fire trends in Brazil's Amazon region from 1998 to 2017.",
     technologies: ["Python", "Data Analysis", "Time Series"],
     github: "https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Amazon%20Rainforest%20Fire%20Data%20Analysis",
-    image: "images/py_amazon rain.webp"
+    image: "https://i.ibb.co.com/s9k2mDjZ/py-amazon-rain.webp"
   },
   {
     name: "Amazon Sales Analysis",
     description: "Amazon Sales Analysis - Detailed analysis of customer behavior patterns and sales trends on Amazon platform.",
     technologies: ["Python", "Data Analysis", "Visualization"],
     github: "https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Amazon%20Sales%20Analysis",
-    image: "images/py_amazon_sales.webp"
+    image: "https://i.ibb.co.com/LzW0DRL9/py-amazon-sales.webp"
   },
   {
     name: "Customer Churn Analysis",
     description: "Customer Churn Analysis - Statistical analysis identifying key factors contributing to customer churn rates.",
     technologies: ["Python", "Machine Learning", "Data Analysis"],
     github: "https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Customer-Churn-analysis-main",
-    image: "images/py_cohort.webp"
+    image: "https://i.ibb.co.com/R44WgBsc/py-cohort.webp"
   },
   {
     name: "Fake News Detection",
     description: "Fake News Detection - Machine learning model development for classifying news articles as authentic or fake.",
     technologies: ["Python", "Machine Learning", "NLP"],
     github: "https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Fake_News_Detection_Using_ML",
-    image: "images/py_fake.webp"
+    image: "https://i.ibb.co.com/SD92F6xw/py-fake.webp"
   },
   {
     name: "Google Play Store Apps Analysis",
     description: "Google Play Store Apps Analysis - Comprehensive analysis of app ratings, categories, and pricing trends on Google Play Store.",
     technologies: ["Python", "Data Analysis", "Visualization"],
     github: "https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Google%20Play%20Store%20Apps%20Data%20Analysis",
-    image: "images/py_play.webp"
+    image: "https://i.ibb.co.com/9KqwQpY/py-play.webp"
   },
   {
     name: "Heart Disease Analysis",
     description: "Heart Disease Analysis - Statistical analysis identifying key factors influencing heart disease likelihood.",
     technologies: ["Python", "Machine Learning", "Healthcare Analytics"],
     github: "https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Heart%20desiess",
-    image: "images/py_heart.webp"
+    image: "https://i.ibb.co.com/4RWNzS6j/py-heart.webp"
   },
   {
     name: "Netflix & IMDB Analysis",
@@ -199,7 +199,7 @@ const pythonProjects = [
     • Analyzed seasonal content strategy and release patterns`,
     technologies: ["Python", "Data Analysis", "Visualization"],
     github: "https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Netflix%20%26%20IMDB%20Data%20Analysis",
-    image: "images/py_net.webp"
+    image: "https://i.ibb.co.com/Wv7nXRcn/py-net.webp"
   },
   {
     name: "Police Vehicle Analysis",
@@ -213,7 +213,7 @@ const pythonProjects = [
     • Analyzed reason categories for stops and their frequencies`,
     technologies: ["Python", "Data Analysis", "Statistical Analysis"],
     github: "https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Police%20Vehicle%20Checking%20Analysis",
-    image: "images/py_vihecal.webp"
+    image: "https://i.ibb.co.com/yBScbkgc/py-vihecal.webp"
   },
   {
     name: "Spotify Music Analysis",
@@ -228,7 +228,7 @@ const pythonProjects = [
     • Investigated playlist inclusion patterns`,
     technologies: ["Python", "Data Analysis", "Music Analytics"],
     github: "https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Spotify%20music%20analysis",
-    image: "images/py_spotifiy.webp"
+    image: "https://i.ibb.co.com/GXFPjsb/py-spotifiy.webp"
   }
 ];
 

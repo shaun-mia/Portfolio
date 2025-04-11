@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { ExperienceSection } from '../components/about/ExperienceSection';
+import { CertificationsSection } from '../components/about/CertificationsSection';
 
 const About = () => {
   return (
@@ -59,6 +60,9 @@ const About = () => {
 
       {/* Experience Section */}
       <ExperienceSection />
+
+      {/* CertificationsSection */}
+      <CertificationsSection />
 
       {/* Download Resume */}
       <div className="container mx-auto px-4 text-center mt-16">
