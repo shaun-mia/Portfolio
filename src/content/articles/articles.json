@@ -30,7 +30,7 @@
     {
       "slug": "demystifying-databases",
       "title": "Demystifying Databases: Choosing the Right Data Storage for Analytics and Science",
-      "date": "April 16, 2024",
+      "date": "April 15, 2025",
       "tags": ["Database", "Analytics", "Data Science", "BigQuery", "SQL", "NoSQL"],
       "excerpt": "A comprehensive guide to choosing the right database system for your data analytics and science projects, comparing RDBMS, NoSQL, and specialized tools like Google BigQuery.",
       "medium": "https://medium.com/@shaunmia/demystifying-databases-choosing-the-right-data-storage-for-analytics-and-science-a944f09ca15a",
@@ -39,7 +39,7 @@
     {
       "slug": "easy-guide-to-bigquery",
       "title": "Easy Guide to Google BigQuery: Using SQL in the Cloud",
-      "date": "April 16, 2024",
+      "date": "April 16, 2025",
       "tags": ["BigQuery", "SQL", "Cloud Computing", "Data Analysis", "Google Cloud", "Tutorial"],
       "excerpt": "A comprehensive beginner-friendly guide to using Google BigQuery for analyzing large datasets in the cloud, with practical examples and cost optimization strategies.",
       "medium": "https://medium.com/@shaunmia/easy-guide-to-google-bigquery-using-sql-in-the-cloud-e020cb7d59f3",
