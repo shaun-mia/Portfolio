@@ -23,7 +23,12 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center gap-3">
+              <img 
+                src="https://i.ibb.co.com/n4fMFV6/Image.gif" 
+                alt="Shaun Mia Logo" 
+                className="w-10 h-10 rounded-full border-2 border-primary-500 shadow-md"
+              />
               <span className="text-xl font-semibold bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent">
                 Shaun Mia
               </span>

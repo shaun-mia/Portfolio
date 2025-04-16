@@ -29,6 +29,7 @@ export const CertificationsSection = () => {
     {
       title: "Entrepreneurship, Leadership, and Communication (ELC) Course",
       issuer: "Sultan Agung Islamic University (UNISSULA), Indonesia",
+      duration: "2024",
       description: [
         "International program focusing on entrepreneurial mindset",
         "Leadership skills development",
@@ -39,71 +40,62 @@ export const CertificationsSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 dark:bg-gray-800/50">
-      <div className="max-w-3xl mx-auto px-4">
+    <section className="container mx-auto px-4 py-16">
+      <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-8"
         >
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-            Professional Training & Certification
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
+            Training & Certifications
           </h2>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="card p-6 bg-white dark:bg-gray-800 shadow-lg"
+          animate={{ opacity: 1, y: 0 }}
+          className="card p-6 hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800"
         >
-          <div className="space-y-8">
-            {certifications.map((cert, index) => (
-              <div 
-                key={index}
-                className={`${
-                  index !== certifications.length - 1 ? 'border-b border-gray-200 dark:border-gray-700 pb-8' : ''
-                }`}
-              >
+          {certifications.map((cert, index) => (
+            <div key={index}>
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
                 <div>
-                  <div className="flex-1">
-                    <div className="flex items-start justify-between gap-2">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                        {cert.title}
-                      </h3>
-                      {cert.status === 'ongoing' && (
-                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-400">
-                          Ongoing
-                        </span>
-                      )}
-                    </div>
-                    <p className="text-primary-600 dark:text-primary-400 font-medium">
-                      {cert.issuer}
-                    </p>
-                    {cert.duration && (
-                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                        Duration: {cert.duration}
-                      </p>
-                    )}
-                    <div className="mt-4">
-                      <ul className="space-y-2">
-                        {cert.description.map((item, i) => (
-                          <li 
-                            key={i}
-                            className="flex items-start gap-2 text-gray-600 dark:text-gray-400"
-                          >
-                            <IoCheckmarkCircle className="text-primary-500 text-lg mt-1 flex-shrink-0" />
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    {cert.title}
+                  </h3>
+                  <p className="text-primary-600 dark:text-primary-400 font-medium">
+                    {cert.issuer}
+                  </p>
                 </div>
+                <span className="inline-flex px-3 py-1 text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 rounded-full">
+                  {cert.duration}
+                </span>
               </div>
-            ))}
-          </div>
+
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-4">
+                {cert.description.map((point, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    <IoCheckmarkCircle className="text-primary-500 text-xl flex-shrink-0 mt-1" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {cert.status === 'ongoing' && (
+                <div className="mb-4">
+                  <span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-400">
+                    Ongoing
+                  </span>
+                </div>
+              )}
+
+              {/* Divider except after last item */}
+              {index < certifications.length - 1 && (
+                <hr className="border-t border-gray-200 dark:border-gray-700 my-6" />
+              )}
+            </div>
+          ))}
         </motion.div>
       </div>
     </section>
