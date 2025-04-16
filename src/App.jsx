@@ -9,11 +9,13 @@ import Articles from './pages/Articles';
 import Article from './pages/Article';
 import ProjectView from './pages/ProjectView';
 import { ThemeProvider } from './context/ThemeContext';
+import { ScrollToTop } from './components/ScrollToTop';
 
 function App() {
   return (
     <ThemeProvider>
       <Router>
+        <ScrollToTop />
         <div className="min-h-screen bg-white dark:bg-slate-900">
           <div className="relative">
             {/* Background decorations */}
@@ -23,14 +25,16 @@ function App() {
             {/* Content */}
             <div className="relative">
               <Navbar />
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/articles" element={<Articles />} />
-                <Route path="/articles/:slug" element={<Article />} />
-                <Route path="/projects/:id" element={<ProjectView />} />
-              </Routes>
+              <main className="pt-16">
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/projects" element={<Projects />} />
+                  <Route path="/articles" element={<Articles />} />
+                  <Route path="/articles/:slug" element={<Article />} />
+                  <Route path="/projects/:id" element={<ProjectView />} />
+                </Routes>
+              </main>
               <Footer />
             </div>
           </div>
