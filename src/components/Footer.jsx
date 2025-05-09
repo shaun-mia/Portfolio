@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaFacebook, FaInstagram, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFacebook, FaInstagram, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -43,7 +43,7 @@ const Footer = () => {
               </a>
               <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
                 <FaMapMarkerAlt className="text-primary-500" />
-                <span>House 14, Road#6, Sector#6, Uttara, Dhaka-1230</span>
+                <span>Dhaka, Bangladesh</span>
               </div>
             </div>
           </div>
@@ -60,6 +60,7 @@ const Footer = () => {
               <SocialLink href="https://www.linkedin.com/in/shaun-mia" icon={<FaLinkedin size={20} />} />
               <SocialLink href="https://www.facebook.com/nameisshaun" icon={<FaFacebook size={20} />} />
               <SocialLink href="https://www.instagram.com/nameisshaun" icon={<FaInstagram size={20} />} />
+              <SocialLink href="https://www.youtube.com/@shauns_data_diaries" icon={<FaYoutube size={20} />} />
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { FaPython, FaChartBar } from 'react-icons/fa';
 import { SiPowerbi, SiMicrosoftexcel, SiMysql, SiPostgresql, SiTableau } from 'react-icons/si';
 import { SkillSection } from '../components/skills/SkillSection';
@@ -89,6 +89,9 @@ const Home = () => {
                 <div className="flex items-center gap-4">
                   <SocialLink href="https://github.com/shaun-mia" icon={<FaGithub />} />
                   <SocialLink href="https://www.linkedin.com/in/shaun-mia" icon={<FaLinkedin />} />
+                  <SocialLink href="https://www.youtube.com/@shauns_data_diaries" icon={<FaYoutube />} />
+                  <SocialLink href="https://www.facebook.com/nameisshaun" icon={<FaFacebook />} />
+                  <SocialLink href="https://www.instagram.com/nameisshaun" icon={<FaInstagram />} />
                   <SocialLink href="mailto:shaunmia.cse@gmail.com" icon={<FaEnvelope />} />
                 </div>
               </motion.div>
@@ -173,7 +176,7 @@ const Home = () => {
               Competitive Programming
             </h2>
             <p className="text-center text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12">
-              Solved 300+ problems in OOP, DSA, and coding challenges of varying difficulty across online judges.
+              Solved 200+ problems in OOP, DSA, and coding challenges of varying difficulty across online judges.
               Focused on improving problem-solving, mastering algorithms, and enhancing logical thinking.
               Also participated in multiple programming contests to refine competitive coding skills.
             </p>
