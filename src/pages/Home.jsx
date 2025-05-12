@@ -72,7 +72,7 @@ const Home = () => {
                   Passionate about data visualization and problem-solving, creating impactful dashboards and exploring innovative solutions.
                 </p>
                 <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                  <a href="https://drive.google.com/file/d/1jwU0zT40rVwWRA-0Scr2kVKDJMO2IfaT/view?usp=sharing"
+                  <a href="https://drive.google.com/file/d/1pDcPu1sOnaBMPGFbOE4g2DKUHcFmVUR_/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-gradient-to-r from-primary-500 to-primary-600 text-white hover:from-primary-600 hover:to-primary-700 px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"

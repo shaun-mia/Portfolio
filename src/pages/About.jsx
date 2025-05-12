@@ -68,7 +68,7 @@ const About = () => {
       <div className="container mx-auto px-4 text-center mt-16">
         <motion.a
           whileHover={{ scale: 1.05 }}
-          href="https://drive.google.com/file/d/1jwU0zT40rVwWRA-0Scr2kVKDJMO2IfaT/view?usp=sharing"
+          href="https://drive.google.com/file/d/1pDcPu1sOnaBMPGFbOE4g2DKUHcFmVUR_/view?usp=sharing"
           className="button-primary inline-flex items-center"
           target="_blank"
           rel="noopener noreferrer"
