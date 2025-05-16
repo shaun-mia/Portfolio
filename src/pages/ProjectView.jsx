@@ -1,13 +1,22 @@
 import { motion } from 'framer-motion';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { FaArrowLeft, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { useState, useEffect } from 'react';
+import { TableauViz } from '../components/TableauViz';
+import { ErrorBoundary } from '../components/ErrorBoundary';
 
 const ProjectView = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [loadError, setLoadError] = useState(false);
 
   // Get project data based on ID from localStorage
   const project = JSON.parse(localStorage.getItem('selectedProject'));
+
+  const handleIframeError = () => {
+    setLoadError(true);
+    console.error("Failed to load Tableau visualization");
+  };
 
   if (!project) {
     return <div className="container mx-auto px-4 py-16">Project not found</div>;
@@ -33,13 +42,21 @@ const ProjectView = () => {
         </h1>
         
         {project.embedUrl && (
-          <div className="relative w-full pt-[56.25%] mb-8">
-            <iframe
-              title={project.title}
-              src={project.embedUrl}
-              className="absolute inset-0 w-full h-full rounded-lg"
-              allowFullScreen={true}
-            />
+          <div className="w-full aspect-video mb-8">
+            {project.type === 'Tableau' ? (
+              <div className="w-full mb-8">
+                <ErrorBoundary vizUrl={project.vizUrl}>
+                  <TableauViz vizUrl={project.vizUrl} />
+                </ErrorBoundary>
+              </div>
+            ) : (
+              <iframe
+                title={project.name}
+                src={project.embedUrl}
+                className="w-full aspect-video rounded-lg shadow-lg"
+                allowFullScreen={true}
+              />
+            )}
           </div>
         )}
 

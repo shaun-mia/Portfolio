@@ -61,6 +61,39 @@ const powerBiProjects = [
   }
 ];
 
+const tableauProjects = [
+  {
+    title: "Superstore Sales Analysis",
+    description: "This Superstore Sales Analysis Tableau dashboard visualizes profit and sales data across U.S. states, highlighting regional performance trends. It includes monthly sales trends by category and a detailed breakdown of sales and sub-categories for 2018-2020, showcasing data-driven insights.",
+    embedUrl: "https://public.tableau.com/app/profile/shaun.mia/viz/MonthlySales_17469038460290/SuperstoreSalesAnalysis",
+    githubUrl: "https://github.com/shaun-mia/BDA_BCET/tree/main/Tableau",
+    image: "https://i.ibb.co/9mHQ9JTM/image.png",  // Updated image URL
+    technologies: ["Tableau", "Data Visualization", "Sales Analytics", "Dashboard"]
+  }
+];
+
+// Convert PowerBI and Tableau projects to common format
+const formattedVisualizationProjects = [
+  ...powerBiProjects.map(project => ({
+    name: project.title,
+    description: project.description,
+    technologies: ['Power BI', 'Data Visualization', 'Analytics', 'Dashboard'],
+    github: project.githubUrl,
+    image: 'images/powerbi.webp',
+    embedUrl: project.embedUrl,
+    type: 'Power BI'
+  })),
+  ...tableauProjects.map(project => ({
+    name: project.title,
+    description: project.description,
+    technologies: project.technologies,
+    github: project.githubUrl,
+    image: project.image,  // Use the provided image URL
+    embedUrl: project.embedUrl,  // Use the Tableau Public URL
+    type: 'Tableau'
+  }))
+];
+
 const sqlProjects = [
   {
     name: "Consumer Goods Ad-Hoc Analysis",
@@ -232,28 +265,21 @@ const pythonProjects = [
   }
 ];
 
-// Convert PowerBI projects to common format
-const formattedPowerBiProjects = powerBiProjects.map(project => ({
-  name: project.title,
-  description: project.description,
-  technologies: ['Power BI', 'Data Visualization', 'Analytics'],
-  github: project.githubUrl,
-  image: 'images/powerbi.webp', // Add a default Power BI image
-  embedUrl: project.embedUrl
-}));
+// Combine all projects with their types
+const allProjects = [
+  ...formattedVisualizationProjects.map(p => ({ 
+    ...p, 
+    type: p.technologies.includes('Tableau') ? 'Tableau' : 'Power BI'
+  })),
+  ...sqlProjects.map(p => ({ ...p, type: 'SQL' })),
+  ...excelProjects.map(p => ({ ...p, type: 'Excel' })),
+  ...pythonProjects.map(p => ({ ...p, type: 'Python' }))
+];
 
 const Projects = () => {
   const [selectedType, setSelectedType] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
-
-  // Combine all projects with their types
-  const allProjects = [
-    ...formattedPowerBiProjects.map(p => ({ ...p, type: 'Power BI' })),
-    ...sqlProjects.map(p => ({ ...p, type: 'SQL' })),
-    ...excelProjects.map(p => ({ ...p, type: 'Excel' })),
-    ...pythonProjects.map(p => ({ ...p, type: 'Python' }))
-  ];
 
   // Filter projects based on type and search query
   const filteredProjects = allProjects.filter(project => {
@@ -263,7 +289,8 @@ const Projects = () => {
       project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.technologies.some(tech => 
         tech.toLowerCase().includes(searchQuery.toLowerCase())
-      );
+      ) ||
+      (project.type && project.type.toLowerCase().includes(searchQuery.toLowerCase()));
     return matchesType && matchesSearch;
   });
 
@@ -271,6 +298,24 @@ const Projects = () => {
     localStorage.setItem('selectedProject', JSON.stringify(project));
     navigate(`/projects/${project.name.toLowerCase().replace(/\s+/g, '-')}`);
   };
+
+  const commonKeywords = [
+    'All',
+    'Power BI',
+    'Tableau', 
+    'SQL',
+    'Excel',
+    'Python',
+    'Data Analysis',
+    'Data Visualization',
+    'Dashboard',
+    'Analytics',
+    'Sales',
+    'Business Intelligence',
+    'Machine Learning',
+    'Tableau Dashboard',  // Added Tableau-specific keywords
+    'Interactive Visualization'
+  ];
 
   return (
     <motion.div
@@ -295,6 +340,7 @@ const Projects = () => {
           selectedType={selectedType}
           onTypeChange={setSelectedType}
           onSearch={setSearchQuery}
+          keywords={commonKeywords}
         />
 
         {/* Projects Grid */}

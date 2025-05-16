@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 export const ProjectFilters = ({ selectedType, onTypeChange, onSearch }) => {
-  const projectTypes = ['All', 'Power BI', 'SQL', 'Python', 'Excel'];
+  const projectTypes = ['All', 'Power BI', 'Tableau', 'SQL', 'Python', 'Excel'];  // Added 'Tableau'
 
   return (
     <div className="mb-8 space-y-4">
