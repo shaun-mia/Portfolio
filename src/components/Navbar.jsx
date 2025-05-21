@@ -11,10 +11,11 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   const navLinks = [
-    { to: '/', text: 'Home' },
-    { to: '/about', text: 'About' },
-    { to: '/projects', text: 'Projects' },
-    { to: '/articles', text: 'Articles' }
+    { href: '/', label: 'Home' },
+    { href: '/about', label: 'About' },
+    { href: '/projects', label: 'Projects' },
+    { href: '/articles', label: 'Articles' },
+    { href: '/contact', label: 'Contact' }
   ];
 
   return (
@@ -40,15 +41,15 @@ const Navbar = () => {
             {/* Navigation Links */}
             {navLinks.map((link) => (
               <Link
-                key={link.text}
-                to={link.to}
+                key={link.label}
+                to={link.href}
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                  isActive(link.to)
+                  isActive(link.href)
                     ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/30'
                     : 'text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400'
                 }`}
               >
-                {link.text}
+                {link.label}
               </Link>
             ))}
             
@@ -77,16 +78,16 @@ const Navbar = () => {
           <div className="md:hidden py-4 border-t border-gray-200 dark:border-gray-800">
             {navLinks.map((link) => (
               <Link
-                key={link.text}
-                to={link.to}
+                key={link.label}
+                to={link.href}
                 className={`block px-3 py-2 rounded-lg text-base font-medium ${
-                  isActive(link.to)
+                  isActive(link.href)
                     ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/30'
                     : 'text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                {link.text}
+                {link.label}
               </Link>
             ))}
             <button
