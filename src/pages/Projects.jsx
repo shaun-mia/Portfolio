@@ -65,7 +65,7 @@ const tableauProjects = [
   {
     title: "Superstore Sales Analysis",
     description: "This Superstore Sales Analysis Tableau dashboard visualizes profit and sales data across U.S. states, highlighting regional performance trends. It includes monthly sales trends by category and a detailed breakdown of sales and sub-categories for 2018-2020, showcasing data-driven insights.",
-    embedUrl: "https://public.tableau.com/app/profile/shaun.mia/viz/MonthlySales_17469038460290/SuperstoreSalesAnalysis",
+    embedUrl: "https://i.ibb.co/9mHQ9JTM/image.png",
     githubUrl: "https://github.com/shaun-mia/BDA_BCET/tree/main/Tableau",
     image: "https://i.ibb.co/9mHQ9JTM/image.png",  // Updated image URL
     technologies: ["Tableau", "Data Visualization", "Sales Analytics", "Dashboard"]
