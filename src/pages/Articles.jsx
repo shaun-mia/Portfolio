@@ -193,7 +193,7 @@ const Articles = () => {
 
                   {/* Article Content */}
                   <div className="flex-1">
-                    <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3 text-justify">
                       {article.excerpt}
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
@@ -237,7 +237,7 @@ const Articles = () => {
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
               No articles found
             </h3>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-gray-600 dark:text-gray-400 text-justify">
               Try adjusting your search or filter settings to find what you're looking for.
             </p>
           </div>

@@ -49,7 +49,7 @@ const Article = () => {
         <div className="text-gray-600 dark:text-gray-400 mb-6">
           {formatDate(article.date)}
         </div>
-        <div className="markdown-content">
+        <div className="markdown-content text-justify">
           <ReactMarkdown>{article.content}</ReactMarkdown>
         </div>
         

@@ -329,7 +329,7 @@ const Projects = () => {
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Project Portfolio
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-justify">
             Explore my collection of data analysis and visualization projects using 
             various tools and technologies.
           </p>
@@ -366,7 +366,7 @@ const Projects = () => {
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 mb-4">
               No projects found matching your criteria.
             </h3>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-justify">
               Try adjusting your search or filter settings. You can search by project name, 
               description, or technology stack. Or browse all projects by selecting 'All' 
               from the filter options above.

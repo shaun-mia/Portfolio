@@ -17,11 +17,9 @@ export const AboutHero = () => (
             About Me
           </h1>
           <div className="prose dark:prose-invert">
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              As a Data Analyst, I am passionate about transforming complex data into meaningful insights
-              through advanced analytics and visualization. With expertise in Power BI, SQL, and Python,
-              I focus on delivering data-driven solutions while continuously exploring innovative analytical
-              approaches to solve business challenges.
+            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
+              Data Analyst & AI Enthusiast. Currently working as a Data Analyst at RO Mart, where I analyze real-world data to drive business decisions and optimize performance.
+              Passionate about transforming complex data into meaningful insights through advanced analytics and visualization. With expertise in Power BI, SQL, and Python, I focus on delivering data-driven solutions and creating impactful dashboards for real business outcomes.
             </p>
           </div>
         </motion.div>
@@ -59,7 +57,7 @@ export const EducationSection = () => (
         <p className="text-primary-600 dark:text-primary-400 font-medium">
           2020 - 2024
         </p>
-        <p className="mt-2 text-gray-600 dark:text-gray-300">
+        <p className="mt-2 text-gray-600 dark:text-gray-300 text-justify">
           Bachelor of Science in Computer Science and Engineering
         </p>
         <div className="mt-4 flex items-center">
@@ -105,5 +103,7 @@ export const CodingProfilesSection = ({ profiles }) => (
         ))}
       </div>
     </motion.div>
+  </div>
+);
   </div>
 );

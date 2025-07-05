@@ -16,11 +16,8 @@ const About = () => {
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
             About Me
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            I am Shaun Mia, a data analyst and AI enthusiast with expertise in Power BI, Excel, Python, and SQL. 
-            Passionate about data visualization and problem-solving, I enjoy creating impactful dashboards and 
-            exploring innovative solutions. My work focuses on real-life projects, blending analytical thinking 
-            with technical proficiency to drive insights.
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 text-justify">
+           As a Data Analyst at RO Mart, I specialize in transforming complex data into meaningful insights through advanced analytics and impactful visualizations. With hands-on experience in Power BI, SQL, and Python, I focus on crafting data-driven solutions that empower decision-making and drive business growth. I’m deeply passionate about exploring innovative analytical approaches to solve real-world challenges and continuously improve processes.
           </p>
           <div className="flex justify-center gap-4">
             <SocialButton 
@@ -49,7 +46,7 @@ const About = () => {
               <p className="text-primary-600 dark:text-primary-400">
                 Daffodil International University
               </p>
-              <p className="text-gray-600 dark:text-gray-400 text-sm mt-2">
+              <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 text-justify">
                 Jan 2020 - Dec 2024 • CGPA: 3.08
               </p>
             </div>

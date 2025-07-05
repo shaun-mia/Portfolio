@@ -49,7 +49,7 @@ const BlogPost = () => {
         <div className="text-gray-600 dark:text-gray-400 mb-6">
           {formatDate(post.date)}
         </div>
-        <div className="markdown-content">
+        <div className="markdown-content text-justify">
           <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
         

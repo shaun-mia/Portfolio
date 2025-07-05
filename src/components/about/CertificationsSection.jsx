@@ -71,7 +71,7 @@ function CertificationCard({ cert, isLast }) {
           {cert.duration}
         </span>
       </div>
-      <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-4">
+      <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-4 text-justify">
         {cert.description.map((point, idx) => (
           <li key={idx} className="flex items-start gap-3">
             <IoCheckmarkCircle className="text-primary-500 text-xl flex-shrink-0 mt-1" />

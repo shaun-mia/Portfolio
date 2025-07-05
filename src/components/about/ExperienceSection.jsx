@@ -95,7 +95,7 @@ export const ExperienceSection = () => {
                 </span>
               </div>
 
-              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-4">
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-4 text-justify">
                 {exp.description.map((point, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <span className="w-2 h-2 mt-2 rounded-full bg-primary-500 flex-shrink-0"></span>

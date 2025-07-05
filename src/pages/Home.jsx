@@ -68,9 +68,10 @@ const Home = () => {
                     & AI Enthusiast
                   </span>
                 </h1>
-                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl">
-                  Passionate about data visualization and problem-solving, creating impactful dashboards and exploring innovative solutions.
-                </p>
+                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl text-justify">
+                  Passionate Data Analyst focused on visualization and problem-solving.
+                  
+                  Currently at RO Mart, turning real-world data into insights that drive smart business decisions.                </p>
                 <div className="flex flex-wrap justify-center lg:justify-start gap-4">
                   <a href="https://drive.google.com/file/d/1pDcPu1sOnaBMPGFbOE4g2DKUHcFmVUR_/view?usp=sharing"
                     target="_blank"
@@ -175,7 +176,7 @@ const Home = () => {
             <h2 className="text-center text-3xl font-bold text-gray-900 dark:text-white mb-6">
               Competitive Programming
             </h2>
-            <p className="text-center text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12">
+            <p className="text-center text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12 text-justify">
               Solved 200+ problems in OOP, DSA, and coding challenges of varying difficulty across online judges.
               Focused on improving problem-solving, mastering algorithms, and enhancing logical thinking.
               Also participated in multiple programming contests to refine competitive coding skills.

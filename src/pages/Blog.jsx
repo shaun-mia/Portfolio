@@ -66,7 +66,7 @@ const Blog = () => {
               <div className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                 {formatDate(post.date)}
               </div>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <p className="text-gray-600 dark:text-gray-300 mb-4 text-justify">
                 {post.excerpt}
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
@@ -92,7 +92,7 @@ const Blog = () => {
           </Link>
         ))}
         {filteredPosts.length === 0 && (
-          <div className="col-span-full text-center py-8 text-gray-500 dark:text-gray-400">
+          <div className="col-span-full text-center py-8 text-gray-500 dark:text-gray-400 text-justify">
             No blog posts found matching your search.
           </div>
         )}
