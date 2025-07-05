@@ -27,7 +27,6 @@ export const ExperienceSection = () => {
         'Reporting regularly on progress to the project manager, allowing for transparent tracking of milestones and deliverables.',
       ],
     },
-
   ];
 
   // Sort experiences by starting year descending
@@ -65,9 +64,31 @@ export const ExperienceSection = () => {
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                     {exp.title}
                   </h3>
-                  <p className="text-primary-600 dark:text-primary-400 font-medium">
-                    {exp.company}
-                  </p>
+                  {exp.company === 'RO Mart' ? (
+                    <a
+                      href="https://romartbd.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary-600 dark:text-primary-400 font-medium hover:text-primary-800"
+                      onClick={e => e.stopPropagation()}
+                    >
+                      {exp.company}
+                    </a>
+                  ) : exp.company === 'Acote Group' ? (
+                    <a
+                      href="https://acotegroup.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary-600 dark:text-primary-400 font-medium hover:text-primary-800"
+                      onClick={e => e.stopPropagation()}
+                    >
+                      {exp.company}
+                    </a>
+                  ) : (
+                    <p className="text-primary-600 dark:text-primary-400 font-medium">
+                      {exp.company}
+                    </p>
+                  )}
                 </div>
                 <span className="inline-flex px-3 py-1 text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 rounded-full">
                   {exp.duration}
