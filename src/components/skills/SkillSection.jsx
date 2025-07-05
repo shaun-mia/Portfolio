@@ -9,22 +9,22 @@ export const SkillSection = () => {
     {
       title: 'Programming',
       icon: <FaCode />,
-      skills: ['C', 'Python', 'SQL', 'HTML', 'CSS']
+      skills: ['C', 'C++','Python', 'SQL', 'HTML', 'CSS']
     },
     {
       title: 'Tools',
       icon: <FaTools />,
-      skills: ['Excel', 'Power BI', 'Power Query', 'AI Tools']
+      skills: ['Excel', 'Google Sheet','Power BI', 'Power Query', 'AI Tools']
     },
     {
       title: 'Visualization',
       icon: <FaChartBar />,
-      skills: ['Power BI', 'Excel Charts']
+      skills: ['Power BI', 'Tableau','Google Data Studio','google Charts','Excel Charts', ]
     },
     {
       title: 'Database',
       icon: <FaDatabase />,
-      skills: ['MySQL', 'PostgreSQL']
+      skills: ['MySQL', 'PostgreSQL','Microsoft SQL Server']
     },
     {
       title: 'Others',
