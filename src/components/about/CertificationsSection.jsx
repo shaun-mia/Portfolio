@@ -6,6 +6,8 @@ const certifications = [
   {
     title: "Professional Certificate in Business Analytics",
     issuer: "Brit College of Engineering & Technology, United Kingdom",
+    link: "https://bcet.uk/",
+    certificateUrl: "https://drive.google.com/file/d/1pDcPu1sOnaBMPGFbOE4g2DKUHcFmVUR_/view?usp=sharing",
     duration: "2025",
     description: [
       "Gained foundational knowledge in business analytics and data-driven decision-making",
@@ -18,6 +20,7 @@ const certifications = [
   {
     title: "Data Analyst Job Ready Bootcamp",
     issuer: "Data Solution 360",
+    link: "https://www.datasolution360.com/",
     duration: "2024",
     description: [
       "Advanced data analysis, data cleaning, and process optimization",
@@ -29,6 +32,7 @@ const certifications = [
   {
     title: "Data Science and Machine Learning Career Path",
     issuer: "Interactive Care",
+    link: "https://interactivecares.com/",
     duration: "2025",
     description: [
       "Comprehensive machine learning algorithms and applications",
@@ -41,6 +45,7 @@ const certifications = [
   {
     title: "Entrepreneurship, Leadership, and Communication (ELC) Course",
     issuer: "Sultan Agung Islamic University (UNISSULA), Indonesia",
+    link: "https://unissula.ac.id/",
     duration: "2024",
     description: [
       "International program focusing on entrepreneurial mindset",
@@ -60,11 +65,30 @@ function CertificationCard({ cert, isLast }) {
     <div>
       <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
         <div>
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-            {cert.title}
-          </h3>
+          {/* If certificateUrl exists, make title a link to certificate */}
+          {cert.certificateUrl ? (
+            <a
+              href={cert.certificateUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl font-semibold text-gray-900 dark:text-white hover:underline"
+            >
+              {cert.title}
+            </a>
+          ) : (
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+              {cert.title}
+            </h3>
+          )}
           <p className="text-primary-600 dark:text-primary-400 font-medium">
-            {cert.issuer}
+            <a
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              {cert.issuer}
+            </a>
           </p>
         </div>
         <span className="inline-flex px-3 py-1 text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 rounded-full">
