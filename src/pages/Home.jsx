@@ -107,7 +107,7 @@ const Home = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-3xl blur-2xl opacity-20 animate-pulse" />
                 <img
-                  src="https://i.ibb.co.com/6cg2wRpR/Shaun-Mia-Formal.jpg"
+                  src="https://i.ibb.co.com/TDXRRdxH/Shaun-Mia.png"
                   alt="Shaun Mia"
                   className="relative rounded-3xl shadow-2xl w-full max-w-md mx-auto"
                 />
