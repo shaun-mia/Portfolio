@@ -18,8 +18,7 @@ export const AboutHero = () => (
           </h1>
           <div className="prose dark:prose-invert">
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
-              Data Analyst & AI Enthusiast. Currently working as a Data Analyst at RO Mart, where I analyze real-world data to drive business decisions and optimize performance.
-              Passionate about transforming complex data into meaningful insights through advanced analytics and visualization. With expertise in Power BI, SQL, and Python, I focus on delivering data-driven solutions and creating impactful dashboards for real business outcomes.
+              As a Business Analyst at CMED Health Ltd, I specialize in turning complex business data into actionable insights that drive strategic decision-making and operational efficiency. With hands-on expertise in Power BI, SQL, Python, and Excel, I deliver data-driven solutions that optimize workflows, uncover trends, and support business growth. I am passionate about leveraging advanced analytics, process optimization, and innovative methodologies to solve real-world challenges and continuously enhance organizational performance.
             </p>
           </div>
         </motion.div>
