@@ -71,7 +71,7 @@ const Home = () => {
                 <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl text-justify">
                   Motivated Business Analyst passionate about data-driven decision-making and process optimization. Currently contributing to CMED Health Ltd by analyzing business requirements, supporting strategic initiatives, and transforming data into actionable insights that enhance operational efficiency and business growth. </p>
                 <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                  <a href="https://drive.google.com/file/d/1pDcPu1sOnaBMPGFbOE4g2DKUHcFmVUR_/view?usp=sharing"
+                  <a href="https://drive.google.com/file1A0H6u0ZrDOjs1JQsyL0K8idl8aHzZ6Kh/d/1pDcPu1sOnaBMPGFbOE4g2DKUHcFmVUR_/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-gradient-to-r from-primary-500 to-primary-600 text-white hover:from-primary-600 hover:to-primary-700 px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
