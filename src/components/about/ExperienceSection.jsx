@@ -3,9 +3,26 @@ import { motion } from 'framer-motion';
 export const ExperienceSection = () => {
   const experiences = [
     {
+      title: 'Business Analyst',
+      company: 'CMED Health Ltd.',
+      duration: 'Dec 2025 – Present',
+      location: 'Dhaka, Bangladesh',
+      description: [
+        'Gather, document, and analyze business requirements to support ongoing projects and strategic initiatives.',
+        'Assist in conducting data analysis to identify trends, patterns, and actionable insights for business improvement.',
+        'Collaborate with cross-functional teams including business development, operations, and product teams to support workflow efficiency.',
+        'Prepare clear and concise reports, presentations, and summaries to assist management in informed decision-making.',
+        'Contribute to optimizing internal processes by identifying gaps and recommending improvements.',
+        'Conduct market research and competitor analysis to support business development strategies.',
+        'Utilize tools such as Excel, PowerPoint, and analytical platforms like Power BI, Tableau, or SQL to support analysis and reporting tasks.',
+        'Support the team in managing and organizing business data to ensure accuracy and accessibility.',
+      ],
+
+    },
+    {
       title: 'Data Analyst',
       company: 'RO Mart',
-      duration: 'Dec 2024 – Present',
+      duration: 'Dec 2024 – Nov 2025',
       location: 'Dhaka, Bangladesh',
       description: [
         'Analyze business performance data using Excel, Google Sheets, and SQL to uncover trends and support strategic decisions.',
@@ -17,22 +34,9 @@ export const ExperienceSection = () => {
       ],
     },
     {
-      title: 'ICT Instructor',
-      company: 'Proshanti School and College',
-      duration: 'Jun 2024 - Oct 2024',
-      location: 'Jamalpur Sadar, Bangladesh',
-      description: [
-        'Conducted ICT classes for students of grades 9–12, covering computer fundamentals, MS Office applications, and digital literacy.',
-        'Designed and delivered lesson plans, practical exercises, and exam-focused materials aligned with the national curriculum.',
-        'Guided students in board exam preparation and practical ICT assessments, improving overall academic performance.',
-        'Promoted digital safety, ethical internet use, and problem-solving skills among students.',
-        'Collaborated with other teachers to integrate ICT across various subjects and enhance the learning experience.',
-      ],
-    },
-    {
       title: 'Associate',
       company: 'Acote Group',
-      duration: 'Jan 2023 - Dec 2023',
+      duration: 'June 2023 - Dec 2024',
       location: 'Dhaka, Bangladesh',
       description: [
         'Processed, verified, and annotated large datasets to ensure accuracy, consistency, and project compliance.',
@@ -78,7 +82,17 @@ export const ExperienceSection = () => {
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                     {exp.title}
                   </h3>
-                  {exp.company === 'RO Mart' ? (
+                  {exp.company === 'CMED Health Ltd' ? (
+                    <a
+                      href="https://cmed.com.bd/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary-600 dark:text-primary-400 font-medium hover:text-primary-800"
+                      onClick={e => e.stopPropagation()}
+                    >
+                      {exp.company}
+                    </a>
+                  ) : exp.company === 'RO Mart' ? (
                     <a
                       href="https://romartbd.com/"
                       target="_blank"

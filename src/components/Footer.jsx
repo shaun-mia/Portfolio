@@ -137,7 +137,7 @@ const Footer = () => {
               </a>
               <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
                 <FaMapMarkerAlt className="text-primary-500" />
-                <span> Najrul Building, Shahid Minar Road, Ukhiya, Cox’s Bazar </span>
+                <span> House#460, Road#31, New DOHS, Mohakhali, Dhaka 1206 </span>
               </div>
             </div>
           </div>

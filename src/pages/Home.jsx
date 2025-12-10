@@ -63,15 +63,13 @@ const Home = () => {
                 className="space-y-8"
               >
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
-                  <span className="block text-gray-900 dark:text-white">Data Analyst</span>
+                  <span className="block text-gray-900 dark:text-white">   Business Analyst</span>
                   <span className="block bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">
-                    & AI Enthusiast
+                    at CMED Health Ltd
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl text-justify">
-                  Passionate Data Analyst focused on visualization and problem-solving.
-                  
-                  Currently at RO Mart, turning real-world data into insights that drive smart business decisions.                </p>
+                  Motivated Business Analyst passionate about data-driven decision-making and process optimization. Currently contributing to CMED Health Ltd by analyzing business requirements, supporting strategic initiatives, and transforming data into actionable insights that enhance operational efficiency and business growth. </p>
                 <div className="flex flex-wrap justify-center lg:justify-start gap-4">
                   <a href="https://drive.google.com/file/d/1pDcPu1sOnaBMPGFbOE4g2DKUHcFmVUR_/view?usp=sharing"
                     target="_blank"
@@ -107,7 +105,7 @@ const Home = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-3xl blur-2xl opacity-20 animate-pulse" />
                 <img
-                  src="../assets/images/shaun-mia-profile.png"
+                  src="https://i.ibb.co.com/bjPc3s11/Shaun-Mia-Formal.jpg"
                   alt="Shaun Mia"
                   className="relative rounded-3xl shadow-2xl w-full max-w-md mx-auto"
                 />
