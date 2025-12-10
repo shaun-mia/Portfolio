@@ -39,7 +39,7 @@ const Footer = () => {
               </a>
               <a href="mailto:shaunmia.sm@gmail.com" className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400">
                 <FaEnvelope className="text-primary-500" />
-                <span>shaunmia.sm@gmail.com</span>
+                <span> shaun.mia@cmedhealth.com | shaunmia.sm@gmail.com </span>
               </a>
               <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
                 <FaMapMarkerAlt className="text-primary-500" />

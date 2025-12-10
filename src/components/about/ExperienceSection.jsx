@@ -82,7 +82,7 @@ export const ExperienceSection = () => {
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                     {exp.title}
                   </h3>
-                  {exp.company === 'CMED Health Ltd' ? (
+                  {exp.company.includes('CMED Health') ? (
                     <a
                       href="https://cmed.com.bd/"
                       target="_blank"
