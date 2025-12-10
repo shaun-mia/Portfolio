@@ -37,13 +37,17 @@ const Footer = () => {
                 <FaPhoneAlt className="text-primary-500" />
                 <span>+880 1976-133731</span>
               </a>
+              <a href="mailto:shaun.mia@cmedhealth.com" className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400">
+                <FaEnvelope className="text-primary-500" />
+                <span> shaun.mia@cmedhealth.com</span>
+              </a>
               <a href="mailto:shaunmia.sm@gmail.com" className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400">
                 <FaEnvelope className="text-primary-500" />
-                <span> shaun.mia@cmedhealth.com | shaunmia.sm@gmail.com </span>
+                <span> shaunmia.sm@gmail.com</span>
               </a>
               <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
                 <FaMapMarkerAlt className="text-primary-500" />
-                <span> House#460, Road#31, New DOHS, Mohakhali, Dhaka 1206 </span>
+                <span> House#460, Road#31, New DOHS, Mohakhali</span>
               </div>
             </div>
           </div>
