@@ -11,8 +11,7 @@ const Footer = () => {
               About Me
             </h3>
             <p className="text-gray-600 dark:text-gray-300 text-sm">
-              Data Analyst specializing in Power BI, SQL, and Python with a passion for transforming complex data into actionable insights through visualization and analytics.
-            </p>
+Business Analyst specializing in data-driven problem-solving, requirement analysis, and process optimization, with a passion for turning business data into actionable insights that support strategic decision-making and operational efficiency.            </p>
           </div>
 
           {/* Quick Links */}
