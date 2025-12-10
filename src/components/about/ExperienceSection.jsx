@@ -60,26 +60,7 @@ export const ExperienceSection = () => {
   return (
     <section className="container mx-auto px-4 py-16">
       <div className="max-w-3xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
-              Experience
-            </h2>
-            <a
-              href="https://docs.google.com/document/d/1A0H6u0ZrDOjs1JQsyL0K8idl8aHzZ6Kh/edit?usp=drive_link&ouid=106209587651246225417&rtpof=true&sd=true"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-primary-600 dark:text-primary-400 font-medium hover:underline"
-              onClick={e => e.stopPropagation()}
-            >
-              View Resume
-            </a>
-          </div>
-        </motion.div>
+        
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
