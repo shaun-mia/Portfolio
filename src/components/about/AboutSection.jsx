@@ -104,5 +104,3 @@ export const CodingProfilesSection = ({ profiles }) => (
     </motion.div>
   </div>
 );
-  </div>
-);

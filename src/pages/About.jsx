@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="min-h-screen py-24">
       {/* Hero Section */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className="container mx-auto px-4 mb-16"
@@ -17,15 +17,15 @@ const About = () => {
             About Me
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 text-justify">
-           As a Data Analyst at RO Mart, I specialize in transforming complex data into meaningful insights through advanced analytics and impactful visualizations. With hands-on experience in Power BI, SQL, and Python, I focus on crafting data-driven solutions that empower decision-making and drive business growth. I’m deeply passionate about exploring innovative analytical approaches to solve real-world challenges and continuously improve processes.
+            As a Business Analyst at CMED Health Ltd, I specialize in turning complex business data into actionable insights that drive strategic decision-making and operational efficiency. With hands-on expertise in Power BI, SQL, Python, and Excel, I deliver data-driven solutions that optimize workflows, uncover trends, and support business growth. I am passionate about leveraging advanced analytics, process optimization, and innovative methodologies to solve real-world challenges and continuously enhance organizational performance.
           </p>
           <div className="flex justify-center gap-4">
-            <SocialButton 
+            <SocialButton
               href="https://github.com/shaun-mia"
               icon={<FaGithub />}
               label="GitHub"
             />
-            <SocialButton 
+            <SocialButton
               href="https://www.linkedin.com/in/shaun-mia"
               icon={<FaLinkedin />}
               label="LinkedIn"
