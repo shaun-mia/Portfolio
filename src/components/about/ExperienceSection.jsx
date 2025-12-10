@@ -70,7 +70,7 @@ export const ExperienceSection = () => {
               Experience
             </h2>
             <a
-              href="https://docs.google.com/document/d/1A0H6u0ZrDOjs1JQsyL0K8idl8aHzZ6Kh/edit?usp=sharing&ouid=106209587651246225417&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/1A0H6u0ZrDOjs1JQsyL0K8idl8aHzZ6Kh/edit?usp=drive_link&ouid=106209587651246225417&rtpof=true&sd=true"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-primary-600 dark:text-primary-400 font-medium hover:underline"
