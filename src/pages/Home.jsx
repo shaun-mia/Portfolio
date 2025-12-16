@@ -62,9 +62,9 @@ const Home = () => {
                 transition={{ delay: 0.2 }}
                 className="space-y-8"
               >
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">
                   <span className="block text-gray-900 dark:text-white">   Business Analyst</span>
-                  <span className="block bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">
+                  <span className="block text-primary-600 dark:text-primary-400">
                     at CMED Health Ltd
                   </span>
                 </h1>

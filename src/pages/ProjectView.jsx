@@ -37,7 +37,7 @@ const ProjectView = () => {
       </button>
 
       <article className="prose prose-lg dark:prose-invert max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {project.title || project.name}
         </h1>
         

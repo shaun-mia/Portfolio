@@ -24,12 +24,8 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-3">
-              <img 
-                src="https://i.ibb.co/hJsztkR8/Shaun-Mia.gif" 
-                alt="Shaun Mia Logo" 
-                className="w-10 h-10 rounded-full border-2 border-primary-500 shadow-md"
-              />
-              <span className="text-xl font-semibold bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent">
+              {/* Use plain text title "Shaun Mia" with primary color */}
+              <span className="text-lg md:text-xl font-semibold text-primary-600 dark:text-primary-400">
                 Shaun Mia
               </span>
             </Link>

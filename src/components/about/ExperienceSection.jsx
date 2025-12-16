@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export const ExperienceSection = () => {
+export const ExperienceSection = (Experience) => {
   const experiences = [
     {
       title: 'Business Analyst',
@@ -8,14 +8,9 @@ export const ExperienceSection = () => {
       duration: 'Dec 2025 – Present',
       location: 'Dhaka, Bangladesh',
       description: [
-        'Gather, document, and analyze business requirements to support ongoing projects and strategic initiatives.',
-        'Assist in conducting data analysis to identify trends, patterns, and actionable insights for business improvement.',
-        'Collaborate with cross-functional teams including business development, operations, and product teams to support workflow efficiency.',
-        'Prepare clear and concise reports, presentations, and summaries to assist management in informed decision-making.',
-        'Contribute to optimizing internal processes by identifying gaps and recommending improvements.',
-        'Conduct market research and competitor analysis to support business development strategies.',
-        'Utilize tools such as Excel, PowerPoint, and analytical platforms like Power BI, Tableau, or SQL to support analysis and reporting tasks.',
-        'Support the team in managing and organizing business data to ensure accuracy and accessibility.',
+        'Gather and document business requirements; collaborate with stakeholders to translate needs into data solutions',
+        'Analyze data using Power BI, SQL, and Excel to build reports and dashboards that inform decision-making',
+        'Optimize processes, conduct market research, and prepare presentations to support strategic initiatives'
       ],
 
     },
@@ -25,12 +20,9 @@ export const ExperienceSection = () => {
       duration: 'Dec 2024 – Nov 2025',
       location: 'Dhaka, Bangladesh',
       description: [
-        'Analyze business performance data using Excel, Google Sheets, and SQL to uncover trends and support strategic decisions.',
-        'Design and maintain interactive dashboards and automated reports in Excel and Power BI to enhance management efficiency.',
-        'Perform data cleaning, transformation, and validation to ensure accuracy and consistency across datasets.',
-        'Collaborate with sales, finance, and logistics teams for order tracking, data verification, and performance reporting.',
-        'Monitor key performance indicators (KPIs) and provide data-driven insights to improve operational efficiency and sales performance.',
-        'Conduct market trend analysis and manage product datasets to optimize inventory, pricing, and marketing strategies.',
+        'Clean, transform, and validate datasets; perform exploratory and statistical analysis to surface trends',
+        'Design and maintain automated dashboards and reports in Power BI and Excel to monitor KPIs',
+        'Collaborate with sales, finance, and logistics to support order tracking, data verification, and performance reporting'
       ],
     },
     {
@@ -39,10 +31,9 @@ export const ExperienceSection = () => {
       duration: 'June 2023 - Dec 2024',
       location: 'Dhaka, Bangladesh',
       description: [
-        'Processed, verified, and annotated large datasets to ensure accuracy, consistency, and project compliance.',
-        'Met daily and weekly annotation targets with high accuracy and attention to detail.',
-        'Collaborated with team members to refine and improve workflow processes, enhancing project efficiency.',
-        'Prepared and submitted regular progress reports to project management, ensuring transparent milestone tracking.',
+        'Process and annotate large datasets with high accuracy to support ML and data projects',
+        'Meet throughput targets while improving workflow efficiency through team collaboration',
+        'Prepare progress reports and ensure data quality and project compliance'
       ],
     },
   ];
@@ -58,10 +49,19 @@ export const ExperienceSection = () => {
   });
 
   return (
-    <section className="container mx-auto px-4 py-16">
+    <section id="experience" className="container mx-auto px-4 py-16">
       <div className="max-w-3xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-6"
+        >
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white"> {/* reduced section heading */}
+            Experience
+          </h2>
+        </motion.div>
         
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -115,11 +115,12 @@ export const ExperienceSection = () => {
                 </span>
               </div>
 
+              {/* Show only first 3 points; (descriptions now contain exactly 3 points) */}
               <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-4">
-                {exp.description.map((point, idx) => (
+                {exp.description.slice(0, 3).map((point, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <span className="w-2 h-2 mt-2 rounded-full bg-primary-500 flex-shrink-0"></span>
-                    <span>{point}</span>
+                    <span>{point.replace(/\.\s*$/, '')}</span>
                   </li>
                 ))}
               </ul>

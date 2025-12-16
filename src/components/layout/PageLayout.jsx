@@ -19,7 +19,7 @@ export const PageLayout = ({
             <motion.h1
               initial={{ y: -20 }}
               animate={{ y: 0 }}
-              className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4"
+              className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
             >
               {title}
             </motion.h1>

@@ -12,11 +12,11 @@ const About = () => {
         animate={{ opacity: 1 }}
         className="container mx-auto px-4 mb-16"
       >
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+        <div className="max-w-4xl mx-auto text-center"> {/* constrain width to match other pages */}
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6"> {/* reduced hero size */}
             About Me
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 text-justify">
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 text-justify"> {/* unified subtitle size */}
             As a Business Analyst at CMED Health Ltd, I specialize in turning complex business data into actionable insights that drive strategic decision-making and operational efficiency. With hands-on expertise in Power BI, SQL, Python, and Excel, I deliver data-driven solutions that optimize workflows, uncover trends, and support business growth. I am passionate about leveraging advanced analytics, process optimization, and innovative methodologies to solve real-world challenges and continuously enhance organizational performance.
           </p>
           <div className="flex justify-center gap-4">
@@ -31,13 +31,37 @@ const About = () => {
               label="LinkedIn"
             />
           </div>
+
+          {/* Quick section links */}
+          <div className="mt-6 flex justify-center gap-3">
+            <a
+              href="#education"
+              className="px-3 py-1 text-sm rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+            >
+              Education
+            </a>
+            <a
+              href="#experience"
+              className="px-3 py-1 text-sm rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+            >
+              Experience
+            </a>
+            <a
+              href="#certifications"
+              className="px-3 py-1 text-sm rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+            >
+              Training & Certifications
+            </a>
+          </div>
         </div>
       </motion.div>
 
       {/* Education Section */}
-      <section className="container mx-auto px-4 mb-16">
+      <section className="container mx-auto px-4 mb-16" id="education">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Education</h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6"> {/* reduced section heading */}
+            Education
+          </h2>
           <div className="space-y-6">
             <div className="card p-6">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -56,10 +80,10 @@ const About = () => {
       </section>
 
       {/* Experience Section */}
-      <ExperienceSection />
+      <ExperienceSection id="experience" />
 
       {/* CertificationsSection */}
-      <CertificationsSection />
+      <CertificationsSection id="certifications" />
 
       {/* Download Resume */}
       <div className="container mx-auto px-4 text-center mt-16">
