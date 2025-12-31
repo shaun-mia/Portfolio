@@ -71,7 +71,7 @@ const About = () => {
                 Daffodil International University
               </p>
               <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 text-justify">
-                Jan 2020 - Dec 2024 • CGPA: 3.08
+                Jan 2020 - Dec 2024 • CGPA: 3.58
               </p>
             </div>
             {/* Add other education entries similarly */}
