@@ -46,7 +46,7 @@ Business Analyst specializing in data-driven problem-solving, requirement analys
               </a>
               <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
                 <FaMapMarkerAlt className="text-primary-500" />
-                <span> House#460, Road#31, New DOHS, Mohakhali</span>
+                <span> House#11, Road#12, Nikunja-2, Dhaka </span>
               </div>
             </div>
           </div>
